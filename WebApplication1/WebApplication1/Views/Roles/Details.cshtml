@@ -1,0 +1,50 @@
+﻿@model WebApplication1.Models.Rol
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rol</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idReunionRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idReunionRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idSedeRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idSedeRol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idBitacoraRol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idBitacoraRol)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idRol }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

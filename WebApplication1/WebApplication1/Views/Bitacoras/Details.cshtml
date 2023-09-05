@@ -1,0 +1,50 @@
+﻿@model WebApplication1.Models.Bitacora
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bitacora</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nHorasLaboradas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nHorasLaboradas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcionDetallada)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcionDetallada)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idBitacora }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

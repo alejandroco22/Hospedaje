@@ -1,0 +1,122 @@
+﻿@model WebApplication1.Models.Sede
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>Sede</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.web)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.web)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nMaximoHuespedes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nMaximoHuespedes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nMaximoEmpleados)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nMaximoEmpleados)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nAreasFisicas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nAreasFisicas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nHabitaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nHabitaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaARenovarRNT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaARenovarRNT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaInauguracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaInauguracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.recibosProveedores)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recibosProveedores)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idSede }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

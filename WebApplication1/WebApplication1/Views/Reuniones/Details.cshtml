@@ -1,0 +1,98 @@
+﻿@model WebApplication1.Models.Reunion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reunion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.meta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcionMeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcionMeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaHoraInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaHoraInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaHoraFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaHoraFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.listaEmpleadosParticipantes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.listaEmpleadosParticipantes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcionReunion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcionReunion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estadoMeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estadoMeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diaMaximoCumplimientoMeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diaMaximoCumplimientoMeta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nMeta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nMeta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idReunion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

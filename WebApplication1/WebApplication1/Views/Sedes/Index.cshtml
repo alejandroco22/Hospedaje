@@ -1,0 +1,104 @@
+﻿@model IEnumerable<WebApplication1.Models.Sede>
+
+@{
+    ViewBag.Title = "Sede";
+}
+
+<h2>Sede</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.localidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ciudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estrato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.web)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nMaximoHuespedes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nMaximoEmpleados)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nAreasFisicas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nHabitaciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diaARenovarRNT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diaInauguracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recibosProveedores)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.localidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ciudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estrato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.web)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nMaximoHuespedes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nMaximoEmpleados)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nAreasFisicas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nHabitaciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaARenovarRNT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaInauguracion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recibosProveedores)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idSede }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idSede }) |
+        </td>
+    </tr>
+}
+
+</table>

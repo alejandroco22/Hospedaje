@@ -1,0 +1,86 @@
+﻿@model IEnumerable<WebApplication1.Models.Reunion>
+
+@{
+    ViewBag.Title = "Reunión";
+}
+
+<h2>Reunión</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.meta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcionMeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diaHoraInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diaHoraFin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.listaEmpleadosParticipantes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcionReunion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estadoMeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diaMaximoCumplimientoMeta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nMeta)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.meta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcionMeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaHoraInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaHoraFin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.listaEmpleadosParticipantes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcionReunion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estadoMeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diaMaximoCumplimientoMeta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nMeta)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idReunion }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idReunion }) |
+        </td>
+    </tr>
+}
+
+</table>

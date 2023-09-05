@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebApplication1.Models.Bitacora>
+
+@{
+    ViewBag.Title = "Bitacora";
+}
+
+<h2>Bitacora</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.tipo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nHorasLaboradas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcionDetallada)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.tipo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nHorasLaboradas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcionDetallada)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idBitacora }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idBitacora }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idBitacora })
+        </td>
+    </tr>
+}
+
+</table>
